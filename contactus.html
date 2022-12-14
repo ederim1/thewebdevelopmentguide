@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web Development Guide</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logos/gif_all.gif" alt="logo gif different colors">
+
+        </a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="html.html" title="html">HTML</a></li>
+                <li><a href="css.html" title="CSS">CSS</a></li>
+                <li><a href="js.html" title="JS">Javascript</a></li>
+                <li><a href="news.html" title="News">News</a></li>
+                <li><a href="contactus.html" title="contactus">Contact_us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contactus-msg">
+            <h1 class="home-title">Contact us</h1>
+            
+        <div>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                 <li>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <label for="mail">E-mail:</label>
+                   <input type="email" id="mail" name="user_email">
+                 </li>
+                 <li>
+                   <label for="msg">Message:</label>
+                   <textarea id="msg" name="user_message"></textarea>
+                 </li>
+                </ul>
+                <a class="button">
+                    <button type="submit">Submit</button>
+                </a>
+                
+               </form>
+            </div>
+        </section>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+        </script>
+
+        
+    </main>
+    
+    <footer>
+        <div class="footer-grid">
+            <section class="copyright">    
+                <h3>thewebdevelopmentguide &copy; 2022 - Eder Morales</h3>
+            </section>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="https://www.facebook.com/MoralesEder" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/edermoralesvi" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/edermorales/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/eimoralesvilleda/" class="fa fa-instagram"></a>
+            <a class='contact' href="contactus.html">Contact Us</a>
+        </div>    
+    </footer>
+</body>
+
+</html>

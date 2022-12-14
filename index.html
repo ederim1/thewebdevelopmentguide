@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Web Development Guide</title>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>TEST</h1>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logos/gif_all.gif" alt="logo gif different colors">
+
+        </a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="html.html" title="html">HTML</a></li>
+                <li><a href="css.html" title="CSS">CSS</a></li>
+                <li><a href="js.html" title="JS">Javascript</a></li>
+                <li><a href="news.html" title="News">News</a></li>
+                <li><a href="contactus.html" title="contactus">Contact_us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Idaho Falls</h1>
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/heroimage.jpg">
+            <source media="(min-width: 481px)" srcset="images/iftempleMedium.jpg">
+            <img class="hero-img" src="images/heroimage.jpg" alt='a development animation'>
+        </picture>
+        <h2 id="banner1"> Learn to code now! </h2>
+        <h3 id="banner" class="hide">Learn with us! </h3>
+    </div>
+
+
+    <div id="dashboard-box">
+        <section class="dashboard">
+            
+            <h1 class="home-title">The Web Development Guide</h1>
+        </section>
+        <video class="path-video" autoplay muted>
+            <source src="images/home_video.mp4" type="video/mp4">
+        </video>
+        
+    </div>
+    <main class="gallery-grid">
+            <section class="gallery-item1">
+                <a href=training.html>
+                <!-- <img src="images/hacker_team.jpg" alt='gallery img desc'> -->
+                <img class="gallery-img" src="images/kid_coding.jpg" alt='gallery img 1'>
+                </a>
+                <h3>Get some training now!</h3>
+            </section> 
+            <section class="gallery-item2">
+                <a href=news.html>
+                <img class="gallery-img" src="images/newspaper.jpg" alt='gallery img 2'>
+                </a>
+                <h3>Web Development News</h3>
+            </section> 
+            <section class="gallery-item3">
+                <a href=https://www.hackthebox.com>
+                <img class="gallery-img" src="images/code.jpg" alt='gallery img 3'>
+                </a>
+                <h3>Practice your skills</h3>
+            </section> 
+    </main>    
+            <div class="banner">
+                <img class="banner-img" src="images/hacker.jpg" alt='banner img 1'>
+                <section class="msg">    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, 
+                        quisquam quod. Qui atque hic quam ad, ab nobis quia dolores sint 
+                        iusto doloribus corporis minus. Minima reiciendis ea nobis. Voluptatibus!</p>
+                </section>
+            </div>
+
+    <footer>
+        <div class="footer-grid">
+            <section class="copyright">    
+                <h3>thewebdevelopmentguide &copy; 2022 - Eder Morales</h3>
+            </section>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="https://www.facebook.com/MoralesEder" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/edermoralesvi" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/edermorales/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/eimoralesvilleda/" class="fa fa-instagram"></a>
+            <a class='contact' href="contactus.html">Contact Us</a>
+        </div>    
+        
+
+        
+        <input type="text" name="productId" pattern="0-[A-Za-z]{3}-[0-9]{3}" title="Product ID" />
+
+
+
+
+    </footer>
 </body>
+
 </html>
