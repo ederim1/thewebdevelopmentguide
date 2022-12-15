@@ -206,21 +206,16 @@ img{
     width: 100%;
     border-radius: 20px;
   }
+  .banner section {
+    grid-column: 2/4;
+  }
 
   /*/////////////// LARGE /////////////////*/
 @media only screen and (min-width: 769px){
 
-    /* body{
-      font-family: 'Lato', sans-serif;
-      display:grid;
-      background-color:#b1365b;
-      margin:50px;
-      padding: 0;
-      margin: 0;
-    } */
-
-
-    
+ .banner section {
+  grid-column: 3/4;
+}
     li{
         display:inline
       }
